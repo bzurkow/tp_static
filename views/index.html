@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index.HTML Page</title>
+	<link href='/stylesheets/style.css' rel='stylesheet'>
+</head>
+	<body>
+		<div class='droplists'>
+			<label>Hotels</label>	
+			<select>
+				{% for hotel in templateHotels %}
+				<option value={{hotel.name}}>{{hotel.name}}</option>
+				{% endfor %}
+			</select>
+		</div>
+		<div class='droplists'>
+			<label>Restaurants</label>	
+			<select>
+				{% for rest in templateRestaurants %}
+				<option value={{rest.name}}>{{rest.name}}</option>
+				{% endfor %}
+			</select>
+		</div>
+		<div class='droplists'>
+			<label>Activity</label>	
+			<select>
+				{% for act in templateActivities %}
+				<option value={{act.name}}>{{act.name}}</option>
+				{% endfor %}
+			</select>
+		</div>
+	</body>
+</html>

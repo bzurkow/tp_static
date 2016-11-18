@@ -33,7 +33,7 @@ app.use((req, res, next) => {
 app.use("/", (err, req, res, next) => {
 	res.status(err.status || 500);
 	console.error(err)
-	res.render(error)
+	res.render(err)
 })
 
 db.sync()
