@@ -2,11 +2,13 @@
 <html>
 <head>
 	<title>Index.HTML Page</title>
-	<link href='/stylesheets/style.css' rel='stylesheet'>
+	<link href='/stylesheets/style.css' rel='stylesheet'/>
+	<link href='/bootstrap' rel='stylesheet'/>
+	<script href='/jquery'></script>
 </head>
 	<body>
 		<div class='droplists'>
-			<label>Hotels</label>	
+			<label>Hotels</label>
 			<select>
 				{% for hotel in templateHotels %}
 				<option value={{hotel.name}}>{{hotel.name}}</option>
@@ -14,7 +16,7 @@
 			</select>
 		</div>
 		<div class='droplists'>
-			<label>Restaurants</label>	
+			<label>Restaurants</label>
 			<select>
 				{% for rest in templateRestaurants %}
 				<option value={{rest.name}}>{{rest.name}}</option>
@@ -22,7 +24,7 @@
 			</select>
 		</div>
 		<div class='droplists'>
-			<label>Activity</label>	
+			<label>Activity</label>
 			<select>
 				{% for act in templateActivities %}
 				<option value={{act.name}}>{{act.name}}</option>

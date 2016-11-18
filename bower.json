@@ -1,0 +1,17 @@
+{
+  "name": "cool",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Gabriel Lebec <glebec@gmail.com> (https://github.com/glebec)"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/bzurkow/tp_static",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
